@@ -14,7 +14,7 @@ int main()
     cin >> l;
     cout << "\nВведите второе число:";
     cin >> m;
-    
+    cout.precision(3);
     switch (q) {
     case '+':
         cout << "Результат:" << l + m; break;
