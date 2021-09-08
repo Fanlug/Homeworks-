@@ -6,7 +6,7 @@ int main()
     setlocale(LC_ALL, "rus");
 
     double c, b, m;
-    
+    cout.precision(3);
     cout << "Решить уравнение bx+c = 0\n";
     
     cout << "\n" << "c = ";
