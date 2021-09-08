@@ -10,7 +10,7 @@ using namespace std;
 int main()
 {
 	double x,y,b;
-
+	cout.precision(3);
 	cout << "x="  ;
 	cin >> x;
 
