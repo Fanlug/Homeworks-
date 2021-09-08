@@ -21,7 +21,7 @@ int main()
 {
 	char a[1000] ;
 		
-	cout << "Print the string:";
+	cout << "write the string:";
 	cin >> a;
 	
 	bubbleSort(a,1000);
