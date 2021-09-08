@@ -13,7 +13,7 @@ int main()
 
 	cout << "x="  ;
 	cin >> x;
-
+	cout.precision(3);
 	cout << "a="  ;
 	cin >> a;
 
