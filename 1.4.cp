@@ -8,7 +8,7 @@ int main()
     double c, b, a;
     
     cout << "Решить уравнение a^2+bx+c = 0\n";
-    
+    cout.precision(3);
     cout << "\n" << "c = ";
     
     cin >> c;
