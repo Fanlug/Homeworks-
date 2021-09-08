@@ -2,23 +2,14 @@
 #include <fstream>
 using namespace std;
 
-int triangles_space() {
-    
-}
-
-int area_of_circle() {
-
-}
-int parallepiped_area() {
-
-}
-
+void area_circle() {}
+void area_pramougolnick() {}
+void area_triangle() {}
 
 int main()
 {
-    int l;
-    cout << "Write the number:";
+    cout << "Choose the option:";
 
-    cin >>l;
-    
+
+
 }
