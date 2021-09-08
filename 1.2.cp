@@ -23,11 +23,12 @@ int main()
     case '*':
         cout << "Результат:" << l * m; break;
     case '/':
-        while (m == 0) {
+        while (m == 0) 
+        {
                 cout << "Wrong parameter, you cannot divide by 0, write another number:";
                 cin >> m;
-                }
-                cout << "Результат:" << l / m;
+        }
+        cout << "Результат:" << l / m;
                                        break;
-        };
+     };
 }
