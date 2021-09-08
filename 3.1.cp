@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 	double S, r, n;
-
+	cout.precision(3);
 	cout << "S=";
 	cin >> S;
 	cout << "p=";
