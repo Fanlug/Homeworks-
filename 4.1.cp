@@ -5,7 +5,7 @@ int main()
 {
     ofstream k("lo.txt");
     k.close();
-    int a=0,sum=0;
+    double a=0,sum=0;
     ifstream f;
 
     string l;
