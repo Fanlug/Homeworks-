@@ -8,13 +8,13 @@ int main()
     char q = ' ';
     cout << "Выберите одну из операций\n(+)Сложение\n(-)Вычитание\n(*)Умножение\n(/)Деление\n";
 
-    cin>>q;
+    cin >> q;
 
     cout << "\nВведите первое число:";
     cin >> l;
     cout << "\nВведите второе число:";
     cin >> m;
-
+    
     switch (q) {
     case '+':
         cout << "Результат:" << l + m; break;
@@ -23,13 +23,11 @@ int main()
     case '*':
         cout << "Результат:" << l * m; break;
     case '/':
-        if (m != 0) {
-            cout << "Результат:" << l / m;
-        }
-        else {
-            cout << "Wrong parameter, you cannot divide by 0";
+        while (m == 0) {
+                cout << "Wrong parameter, you cannot divide by 0, write another number:";
+                cin >> m;
+                }
+                cout << "Результат:" << l / m;
+                                       break;
         };
-        ; break;
-
-    };
 }
