@@ -3,6 +3,7 @@ using namespace std;
 
 int main()
 {
+	cout.precision(3);
 	for (double i = -4;i<=4;i=i+0.5) 
 	{
 		if (i != 1) 
