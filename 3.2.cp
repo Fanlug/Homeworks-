@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 	double S, m, n, delta, min_delta = 10000000, l;
-
+	cout.precision(3);
 	cout << "S=";
 	cin >> S;
 	cout << "m=";
