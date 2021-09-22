@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 
 using namespace std;
 
@@ -10,7 +11,7 @@ using namespace std;
 int main()
 {
 	double x,y,b;
-	cout.precision(3);
+	cout << fixed << setprecision(3);
 	cout << "x="  ;
 	cin >> x;
 
