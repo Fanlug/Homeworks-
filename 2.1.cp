@@ -10,7 +10,7 @@ using namespace std;
 int main()
 {
 	double height, Rad1, Rad2, lenght;
-	cout.precision(3);
+	cout << fixed << setprecision(3);
 	cout << "Height:";
 	cin >> height;
 
