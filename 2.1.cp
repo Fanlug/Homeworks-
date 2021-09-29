@@ -21,12 +21,11 @@ int main()
 	cout << "Second radius:";
 	cin >> Rad2;
 
-	cout << "Length:";
-	cin >> lenght;
+	lenght = sqrt(abs(Rad1 - Rad2) * abs(Rad1 - Rad2) + height * height);
 
-	cout << "Cone volume:" << (M_PI*height*((Rad1*Rad1 + Rad1*Rad2 + Rad2*Rad2) )) / 3<<endl;
+	cout << "Cone volume:" << (M_PI * height * ((Rad1 * Rad1 + Rad1 * Rad2 + Rad2 * Rad2))) / 3 << endl;
 
-	cout << "Cone surface:" << M_PI*(Rad1*Rad1 + lenght*(Rad1 + Rad2) + Rad2*Rad2)  << endl;
+	cout << "Cone surface:" << M_PI * (Rad1 * Rad1 + lenght * (Rad1 + Rad2) + Rad2 * Rad2) << endl;
 
 
 
