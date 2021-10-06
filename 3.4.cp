@@ -1,12 +1,13 @@
 #include<cmath>
-#include<iostream>
 #include<fstream>
+#include<iostream>
 using namespace std;
 
 int main()
 {
-	string a ;
+	string a;
 	char b[1000];
+	char kok;
 	ofstream file("text.txt");
 	file.close();
 	system("text.txt");
@@ -14,21 +15,20 @@ int main()
 	do {
 		cin >> a;
 	} while (a != "show");
-		ifstream f;
-		f.open("text.txt");
+	ifstream f;
+	f.open("text.txt");
+	a = "";
+	while (!f.eof())
+	{
 
-		while (!f.eof())
-		{
-
-			f.getline(b, sizeof(b));
-			for (int i = 0; i < sizeof(b); i++) {
-				if (b[i] != '0' && b[i] != '1'&& b[i] != '2'&& b[i] != '3'&& b[i] != '4'&& b[i] != '5'&&
-					b[i] != '6' && b[i] != '7' && b[i] != '8' && b[i] != '9') {
-					b[i] = ' ';
-				}
+		f >> kok;
+		
+			if (kok != '0' && kok != '1' && kok != '2' && kok != '3' && kok != '4' && kok != '5' &&
+				kok != '6' && kok != '7' && kok != '8' && kok != '9' && kok!='\n') {
+				kok = ' ';
 			}
-			cout << "\n" << b;
-		}
-	
-
-}
+			a += kok;
+	} 
+	cout << a;
+		
+	}
