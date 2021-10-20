@@ -6,13 +6,15 @@ int main()
 {
 	double S, r, n;
 	cout.precision(3);
-	cout << "S=";
-	cin >> S;
-	cout << "p=";
-	cin >> r ;
-	r /= 100;	
-	cout << "n=";
-	cin >> n;
-
+	do {
+		cout << "S=";
+		cin >> S;
+		cout << "p=";
+		cin >> r;
+		r /= 100;
+		cout << "n=";
+		cin >> n;
+		if (r < 0 || S < 0 || n < 0) { cout << " Write another number."; };
+	} while (r<0||S<0||n<0);
 	cout << (S * r * pow(r + 1, n)) / (12 * (pow(r + 1, n) - 1));
 }
