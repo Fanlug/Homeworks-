@@ -1,20 +1,20 @@
 #include <iostream>
-#include <iomanip>
 using namespace std;
 
-int main()
-{
-	cout << fixed << setprecision(3);
-	for (double i = -4;i<=4;i=i+0.5) 
-	{
-		if (i != 1) 
-		{
-			cout << " ("<<i<<")"<<(i*i+2*i+2)/(i-1);
-		}
-		else 
-		{
-			cout <<" ("<< i<<")N";
+int main() {
+	double x, y;
+	x = -4;
+	while (x < 4.5) {
+		cout << "x = ";
+		if (x == 1) { cout << "    Error" << endl; x += 0.5; }
+		if (x < 0) {printf("%.1f", x);}
+		if (x >= 0) {printf(" %.1f", x);}
+		else {
+			y = (pow(x, 2) - 2 * x + 2) / (x - 1);
+			cout << "   y = ";
+			if (y > 0) { printf(" %.2f\n", y); }
+			else { printf("%.2f\n", y); }
+			x += 0.5;
 		}
 	}
-
 }
