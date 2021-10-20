@@ -22,13 +22,13 @@ int main()
 	{
 
 		f >> kok;
-		
-			if (kok != '0' && kok != '1' && kok != '2' && kok != '3' && kok != '4' && kok != '5' &&
-				kok != '6' && kok != '7' && kok != '8' && kok != '9' && kok!='\n') {
-				kok = ' ';
-			}
-			a += kok;
-	} 
-	cout << a;
-		
+
+		if (kok != '0' && kok != '1' && kok != '2' && kok != '3' && kok != '4' && kok != '5' &&
+			kok != '6' && kok != '7' && kok != '8' && kok != '9' && kok != '\n') {
+			kok = '\0';
+		}
+		a += kok;
 	}
+	cout << a;
+
+}
