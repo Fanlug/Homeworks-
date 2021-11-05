@@ -18,6 +18,6 @@ int main()
         sum += a;
         k >> a;
     }
-
-    cout << fixed  <<sum;
+    std::cout.precision(0);
+    cout  <<fixed<<sum;
 }
