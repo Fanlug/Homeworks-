@@ -1,12 +1,13 @@
-#include <iostream>
+#include<iostream>
 #include<cmath>
 #include<fstream>
 using namespace std;
 
-void bubbleSort(char a[], long size) {
-	long i, j,x;
-	for (i = 0; i < size; i++) {            
-		for (j = size -1; j > i; j--) {     
+string bubbleSort(string a) {
+	long i, j;
+	char x;
+	for (i = 0; i < a.length(); i++) {
+		for (j = a.length() - 1; j > i; j--) {
 			if (a[j - 1] > a[j]) {
 				x = a[j - 1];
 				a[j - 1] = a[j];
@@ -14,21 +15,14 @@ void bubbleSort(char a[], long size) {
 			}
 		}
 	}
+	return a;
 }
 
 
 int main()
 {
-	char a[1000] ;
-		
+	string a;
 	cout << "write the string:";
 	cin >> a;
-	
-	bubbleSort(a,1000);
-
-	for (int i = 0; i < sizeof(a); i++) {
-		if (a[i] < 250 && a[i] > 50) { cout << a[i]; }
-
-	};
-
+	cout << bubbleSort(a);
 }
