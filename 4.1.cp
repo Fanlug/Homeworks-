@@ -3,25 +3,21 @@
 using namespace std;
 int main()
 {
-    ofstream k("lo.txt");
-    k.close();
-    double a=0,sum=0;
-    ifstream f;
-
+    fstream k("lol.txt");
+    double a = 0, sum = 0;
     string l;
-    
-    f.open("text.txt");
-    cout << "Write something in the text.txt .\n write sum to summaraise the file contents:";
-
-    system("text.txt");
+    k.close();
+    cout << "Write something in the lol.txt";
+    system("lol.txt");
+    cout << "\n Write sum to summaraise the file contents:"; 
     do {
         cin >> l;
     } while (l != "sum");
-
-    while (!f.eof()) {
+    k.open("lol.txt");
+    while (!k.eof()) {
         sum += a;
-        f >> a;
+        k >> a;
     }
 
-    cout << sum;
+    cout << fixed  <<sum;
 }
